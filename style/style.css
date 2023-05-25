@@ -150,7 +150,8 @@ body {
 
   border-radius: 8px;
   border: 1px solid #e6e6e6;
-
+  transition: transform 00.2s ;
+  
   margin-top: 29px;
   float: left;
 }
@@ -161,8 +162,8 @@ body {
 
 .btn-google:active,
 .btn-facebook:active {
-  position: relative;
-  top: 1px;
+    transform: scale(0.98);
+
 }
 
 .google-logo {
@@ -188,6 +189,8 @@ body {
 
   margin-top: 29px;
   margin-left: 26px;
+
+  transition: transform 00.2s ;
 
   border: 1px solid #e6e6e6;
   border-radius: 8px;
@@ -313,13 +316,12 @@ body {
 
   background: #8acbce;
   border-radius: 8px;
-
+  transition: transform 0.2s ;
   margin-top: 49px;
 }
 
 .send-info:active {
-  position: relative;
-  top: 1px;
+  transform: scale(0.98);
 }
 
 .send-text {
