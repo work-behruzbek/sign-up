@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../font/telegraf/PPTelegraf-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Telegraf-light';
+    src: url('../font/telegraf/PPTelegraf-UltraLight.otf');
+}
+
+@font-face {
+    font-family: 'Telegraf-bold';
+    src: url('../font/telegraf/PPTelegraf-UltraBold.otf');
+}

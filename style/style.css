@@ -1,0 +1,354 @@
+@import url(reset.css);
+@import url(scroll.css);
+@import url(font-family.css);
+
+:root {
+  --container-bg: #b0d8da;
+  --br: 1px solid red;
+  --input-border: 1px solid #e8e8e8;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1000px;
+  height: 600px;
+
+  position: relative;
+  border-radius: 15px;
+
+  box-shadow: 0px 0px 20px rgba(202, 202, 202, 0.604);
+  background-color: var(--container-bg);
+  overflow: hidden;
+}
+
+.back-btn {
+  width: 60px;
+  height: 60px;
+
+  margin-top: -450px;
+  margin-right: 40px;
+
+  background-color: #ffffff;
+  box-shadow: -5px -1px 10px #fdfbff,
+   7px 2px 15px #b4b9be9f;
+
+  border-radius: 50%;
+  /* border: var(--br); */
+}
+
+.back-btn:hover {
+  background-color: #f5f5f5d9;
+
+  box-shadow: -5px -1px 10px #fdfbff, 8px 3px 15px #b4b9be9f;
+}
+
+.back-btn:active {
+  position: relative;
+  /* top: 1px; */
+  transform: scale(0.95);
+}
+
+.left {
+  width: 421px;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+
+  background-color: var(--container-bg);
+  float: left;
+  /* overflow: hidden; */
+}
+
+.left-logo {
+  margin: 20px 25px;
+}
+
+.left-text {
+  margin: 46.95px 25px;
+
+  font-family: "Telegraf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+
+  letter-spacing: 0.08em;
+
+  color: #ffffff;
+}
+
+.left-abstraction {
+  width: 494px;
+  height: 487px;
+
+  position: absolute;
+  top: 204px;
+  left: 7px;
+
+  transform: rotate(-7.75deg);
+  z-index: 2;
+  background: url(../image/abstraction.png);
+}
+
+.right {
+  width: 785px;
+  height: 100%;
+
+  position: absolute;
+  left: 421px;
+  top: 0px;
+
+  background: #ffffff;
+  border-radius: 36px;
+  float: left;
+  z-index: 1;
+  /* overflow: hidden; */
+}
+
+.right-lang {
+  font-family: "Telegraf-light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 35px;
+  margin: 15px 455px;
+
+  color: #a2a2a2;
+}
+
+.content {
+  width: 405px;
+  height: 514px;
+
+  margin: 54px 106px;
+}
+
+.content-title {
+  font-family: "Telegraf-bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+
+  letter-spacing: 0.08em;
+
+  color: #000000;
+}
+
+.btn-google {
+  width: 188px;
+  height: 45px;
+
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+
+  margin-top: 29px;
+  float: left;
+}
+
+.btn-google:hover {
+  background-color: #f4f3f3;
+}
+
+.btn-google:active,
+.btn-facebook:active {
+  position: relative;
+  top: 1px;
+}
+
+.google-logo {
+  margin: 11px 12px;
+  float: left;
+}
+
+.btn-google-a {
+  font-family: "Telegraf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  margin-top: 16px;
+
+  color: #5a5a5a;
+  float: left;
+}
+
+.btn-facebook {
+  width: 188px;
+  height: 45px;
+
+  margin-top: 29px;
+  margin-left: 26px;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  float: left;
+}
+
+.btn-facebook:hover {
+  background-color: #f4f3f3;
+}
+
+.facebook-logo {
+  margin: 11px 12px;
+  float: left;
+}
+
+.btn-facebook-a {
+  font-family: "Telegraf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  margin-top: 16px;
+
+  color: #5a5a5a;
+  float: left;
+}
+
+.content .title {
+  font-family: "Telegraf";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  margin-top: 110px;
+  margin-left: 179px;
+
+  color: #a3a3a3;
+}
+
+.content-input1 {
+  width: 100%;
+  height: 35px;
+
+  font-family: "Telegraf-light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  margin-top: 14px;
+
+  color: #9d9d9d;
+  border-bottom: var(--input-border);
+}
+
+.content-input1::placeholder {
+  font-family: "Telegraf-light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  color: #9d9d9d;
+}
+
+.content-input2 {
+  width: 100%;
+  height: 35px;
+
+  font-family: "Telegraf-light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  margin-top: 29px;
+
+  color: #9d9d9d;
+  border-bottom: var(--input-border);
+}
+
+.content-input2::placeholder {
+  font-family: "Telegraf-light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  color: #9d9d9d;
+}
+
+.content-input3 {
+  width: 100%;
+  height: 35px;
+
+  font-family: "Telegraf-light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  margin-top: 29px;
+
+  color: #9d9d9d;
+  border-bottom: var(--input-border);
+}
+
+.content-input3:focus,
+.content-input2:focus,
+.content-input1:focus {
+  box-shadow: 0px -9px 10px -9px #8acbce inset;
+  border: none;
+  border-bottom: #8acbce;
+}
+
+.content-input3::placeholder {
+  font-family: "Telegraf-light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  color: #9d9d9d;
+}
+
+.send-info {
+  width: 100%;
+  height: 45px;
+
+  background: #8acbce;
+  border-radius: 8px;
+
+  margin-top: 49px;
+}
+
+.send-info:active {
+  position: relative;
+  top: 1px;
+}
+
+.send-text {
+  font-family: "Telegraf-bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+
+  line-height: 35px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.content-text {
+  font-family: "Telegraf-light";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+
+  margin-top: 23px;
+
+  color: #9d9d9d;
+}
+
+.text-link {
+  color: #8acbce;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
