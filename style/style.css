@@ -37,8 +37,7 @@ body {
   margin-right: 40px;
 
   background-color: #ffffff;
-  box-shadow: -5px -1px 10px #fdfbff,
-   7px 2px 15px #b4b9be9f;
+  box-shadow: -5px -1px 10px #fdfbff, 7px 2px 15px #b4b9be9f;
 
   border-radius: 50%;
   /* border: var(--br); */
@@ -114,16 +113,44 @@ body {
   /* overflow: hidden; */
 }
 
+.btn-theme {
+  width: 27px;
+  height: 27px;
+
+  margin-left: 435px;
+  margin-top: 15px;
+
+  /* border: var(--br); */
+  border-radius: 50%;
+  float: left;
+}
+
+.btn-theme:hover {
+  background-color: #f4f3f3;
+}
+
+#mode-light {
+  display: block;
+  margin-top: 2px;
+  margin-left: 4px;
+}
+
+#mode-dark {
+  display: none;
+  margin-left: 6px;
+}
+
 .right-lang {
   font-family: "Telegraf-light";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
 
+  margin-top: 20px;
   line-height: 35px;
-  margin: 15px 455px;
 
   color: #a2a2a2;
+  float: left;
 }
 
 .content {
@@ -150,8 +177,8 @@ body {
 
   border-radius: 8px;
   border: 1px solid #e6e6e6;
-  transition: transform 00.2s ;
-  
+  transition: transform 00.2s;
+
   margin-top: 29px;
   float: left;
 }
@@ -162,8 +189,7 @@ body {
 
 .btn-google:active,
 .btn-facebook:active {
-    transform: scale(0.98);
-
+  transform: scale(0.98);
 }
 
 .google-logo {
@@ -190,7 +216,7 @@ body {
   margin-top: 29px;
   margin-left: 26px;
 
-  transition: transform 00.2s ;
+  transition: transform 00.2s;
 
   border: 1px solid #e6e6e6;
   border-radius: 8px;
@@ -316,7 +342,7 @@ body {
 
   background: #8acbce;
   border-radius: 8px;
-  transition: transform 0.2s ;
+  transition: transform 0.2s;
   margin-top: 49px;
 }
 
@@ -353,4 +379,16 @@ body {
 
 .text-link:hover {
   text-decoration: underline;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+  background-color: #000000;
+  color: white;
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
